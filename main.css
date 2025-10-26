@@ -196,20 +196,130 @@ nav {
   width: 100%;
   height: 100dvh;
   background: url("images/landing-page.png") center center no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: scroll;
-  position: relative; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  background-color: #fff;
 }
 
+/* ✅ Text positioned inside the white monitor box */
+.main-message {
+  position: absolute;
+  top: 38%; /* moves text down into the white box area */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #333;
+  width: 80%;
+  max-width: 700px;
+}
 
+.main-message h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.main-message h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #555;
+  margin-top: 10px;
+}
+
+.main-message p {
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+
+/* ✅ Mobile adjustments — centers text better for smaller screens */
 @media (max-width: 768px) {
   .landing-page {
     background-size: contain;
     background-position: center top;
-    background-color: #fff;
+  }
+
+  .main-message {
+    top: 42%; /* slightly lower for mobile */
+    width: 90%;
+  }
+
+  .main-message h1 {
+    font-size: 2.2rem;
+  }
+
+  .main-message h2 {
+    font-size: 1.4rem;
+  }
+
+  .main-message p {
+    font-size: 1.1rem;
+  }
+}
+.landing-page {
+  width: 100%;
+  height: 100dvh;
+  background: url("images/landing-page.png") center center no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+  position: relative;
+  background-color: #fff;
+}
+
+/* ✅ Text positioned inside the white monitor box */
+.main-message {
+  position: absolute;
+  top: 38%; /* moves text down into the white box area */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #333;
+  width: 80%;
+  max-width: 700px;
+}
+
+.main-message h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.main-message h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #555;
+  margin-top: 10px;
+}
+
+.main-message p {
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+
+/* ✅ Mobile adjustments — centers text better for smaller screens */
+@media (max-width: 768px) {
+  .landing-page {
+    background-size: contain;
+    background-position: center top;
+  }
+
+  .main-message {
+    top: 42%; /* slightly lower for mobile */
+    width: 90%;
+  }
+
+  .main-message h1 {
+    font-size: 2.2rem;
+  }
+
+  .main-message h2 {
+    font-size: 1.4rem;
+  }
+
+  .main-message p {
+    font-size: 1.1rem;
   }
 }
 
