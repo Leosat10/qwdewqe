@@ -194,14 +194,34 @@ nav {
 
 .landing-page {
   width: 100%;
-  min-height: 100vh;
+  height: 100dvh; 
   background: url("images/landing-page.png") center center no-repeat;
-  background-size: contain;       /* shows full image */
-  background-color: #000;         /* background fill if there’s empty space */
-  background-attachment: scroll;  /* fixes mobile Safari issues */
+  background-size: cover;
+  background-attachment: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .landing-page {
+    background-size: contain;
+    background-position: center top;
+    background-color: #fff;
+  }
+}
+
+
+.main-message {
+  text-align: center;
+  color: #333;
+}
+
+.main-message h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 
