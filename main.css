@@ -196,13 +196,16 @@ nav {
   width: 100%;
   min-height: 100vh;
   background: url("images/landing-page.png") center center no-repeat;
-  background-size: cover; /* fills the screen */
-  background-attachment: scroll; /* fixes mobile zoom issue */
-  position: relative;
+  background-size: contain;       /* shows full image */
+  background-color: #000;         /* background fill if there’s empty space */
+  background-attachment: scroll;  /* fixes mobile Safari issues */
   display: flex;
   align-items: center;
   justify-content: center;
-} 
+}
+
+
+
 .main-message {
   width: 100%;
   max-width: 58rem;
